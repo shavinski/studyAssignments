@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // Initialize scanner to be used later for user input
         Scanner scanner = new Scanner(System.in);
 
         String[][] stateCapitals = {
@@ -87,8 +88,9 @@ public class Main {
         int score = 0;
         int stateCounter = 50;
 
-        // Ask for user input until user presses enters q or user names all 50 capitals
-        while(stateCounter > 0) {
+        // Ask for user input until user presses enters q OR user names all 50 capitals,
+        // returns score at end
+        while (stateCounter > 0) {
             String userInput = scanner.nextLine();
 
             if (userInput.compareTo("q") == 0) {
@@ -111,7 +113,7 @@ public class Main {
     // Bubble sorts based of capital name in array of arrays
     public static String[][] bubbleSort(String[][] stateCapitals) {
 
-         for (int i = 0; i < stateCapitals.length - 1; i++) {
+        for (int i = 0; i < stateCapitals.length - 1; i++) {
             for (int j = 0; j < stateCapitals.length - 1; j++) {
                 String currentCaptial = stateCapitals[j][1];
                 String nextCapital = stateCapitals[j + 1][1];
