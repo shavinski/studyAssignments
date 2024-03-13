@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Part1 {
     public static void main(String[] args) {
         // Initialize scanner to be used later for user input
         Scanner scanner = new Scanner(System.in);
@@ -68,7 +68,7 @@ public class Main {
         }
 
         // Bubble sort implementaion using Main method called bubbleSort
-        String[][] sortedCapitals = Main.bubbleSort(stateCapitals);
+        String[][] sortedCapitals = Part1.bubbleSort(stateCapitals);
 
         System.out.println(" ");
         System.out.println("After the bubble sort");
