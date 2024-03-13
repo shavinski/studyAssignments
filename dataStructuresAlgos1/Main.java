@@ -67,7 +67,7 @@ public class Main {
             System.out.println(stateCapital[0] + " : " + stateCapital[1]);
         }
 
-        // Bubble sort implementaion using Main method bubbleSort
+        // Bubble sort implementaion using Main method called bubbleSort
         String[][] sortedCapitals = Main.bubbleSort(stateCapitals);
 
         System.out.println(" ");
